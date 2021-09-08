@@ -1,0 +1,51 @@
+﻿@model etiyaproject.Models.EMPLOYEE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EMPLOYEE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NAME_SURNAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NAME_SURNAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATU)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATU)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CDATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EMPLOYEE_ID }) |
+    <button class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
+</p>

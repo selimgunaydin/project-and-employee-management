@@ -1,0 +1,51 @@
+﻿@model etiyaproject.Models.PROJECT
+@using etiyaproject.Models
+
+<div>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title" id="myModalLabel">@Model.PROJECT_NAME</h4>
+    </div>
+    <table class="table table table-bordered table-hover table-condensed">
+        <tr>
+            <th>
+                MILESTONES_TYPE &nbsp;&nbsp;
+            </th>
+            <th>
+                START&nbsp;&nbsp;
+            </th>
+            <th>
+                END&nbsp;&nbsp;
+            </th>
+            <th>
+                PER&nbsp;&nbsp;
+            </th>
+            <th>
+                PROJECT_ST&nbsp;&nbsp;
+            </th>
+        </tr>
+
+        @foreach (var item in Model.PROJECT_DATE)
+        {
+    <tr>
+        <td>
+            @item.MILESTONES_TYPE&nbsp;&nbsp;
+        </td>
+        <td>
+            @item.S_DATE&nbsp;&nbsp;
+        </td>
+        <td>
+            @item.E_DATE&nbsp;&nbsp;
+        </td>
+        <td>
+            @item.PER&nbsp;&nbsp;
+        </td>
+        <td>
+            @item.GENERAL_ST.NAME&nbsp;&nbsp;
+        </td>
+    </tr>
+        }
+    </table>
+</div>
+

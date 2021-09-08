@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="78ac6bd174634b5ba37598621ef18be3" Name="Diagram1">
+        <EntityTypeShape EntityType="etiyadbModel.CALENDAR" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.CALENDAR_COLOR" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.COMPLETED" Width="1.5" PointX="7.5" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.EMPLOYEE" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.EMPLOYEE_WORK" Width="1.5" PointX="7.5" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.GENERAL_ST" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.GNL_CHAR" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.GNL_CHAR_VAL" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.PROJECT" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="etiyadbModel.PROJECT_DATE" Width="1.5" PointX="10.5" PointY="7.375" IsExpanded="true" />
+        <AssociationConnector Association="etiyadbModel.FK__CALENDAR__CALEND__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__CALENDAR__EMPLOY__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__COMPLETED__PROJE__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__EMPLOYEE___EMPLO__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__EMPLOYEE___PROJE__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__PROJECT_D__PROJE__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__GNL_CHAR___GNL_C__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__PROJECT__TEAM_ID__2B3F6F97" ManuallyRouted="false" />
+        <AssociationConnector Association="etiyadbModel.FK__PROJECT_D__PROJE__33D4B598" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

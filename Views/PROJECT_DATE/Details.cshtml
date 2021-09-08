@@ -1,0 +1,75 @@
+﻿@model etiyaproject.Models.PROJECT_DATE
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PROJECT_DATE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MILESTONES_TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MILESTONES_TYPE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.E_DATE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.E_DATE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LAST_ST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LAST_ST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GENERAL_ST.CODE_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GENERAL_ST.CODE_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROJECT.TEAM_DEVOPS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROJECT.TEAM_DEVOPS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PROJECT_DATE_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

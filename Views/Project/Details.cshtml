@@ -1,0 +1,75 @@
+﻿@model etiyaproject.Models.PROJECT
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PROJECT</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TEAM_DEVOPS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TEAM_DEVOPS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROJECT_NUMBER)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROJECT_NUMBER)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROJECT_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROJECT_NAME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PROJECT_ST)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PROJECT_ST)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MILESTONES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MILESTONES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.COLOR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.COLOR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GNL_CHAR_VAL.TEAM_NAME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GNL_CHAR_VAL.TEAM_NAME)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PROJECT_ID }) |
+    <button class="btn btn-default">@Html.ActionLink("Back to List", "Index")</button>
+</p>
